@@ -20,7 +20,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-//import InsertImage from '@ckeditor/ckeditor5-image/src/imageinsert';
+import InsertImage from '@ckeditor/ckeditor5-image/src/imageinsert';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -31,7 +31,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
-//import {ImageInsert} from "@ckeditor/ckeditor5-image";
+import {ImageInsert} from "@ckeditor/ckeditor5-image";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -52,7 +52,7 @@ ClassicEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
-	//ImageInsert,
+	ImageInsert,
 	Indent,
 	Link,
 	List,
@@ -83,7 +83,7 @@ ClassicEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
-			//'imageInsert',
+			'imageInsert',
 			'undo',
 			'redo'
 		]
